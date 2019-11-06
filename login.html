@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<div class="container">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./CSS/login.css">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+        <div class="moveableBookmark">
+            <div class="LOGO"><a href="index.html" title="Gin Hardware"><img src=".\images/nobackgroundlogo.png" width="250" height="50"
+                        alt="Gin Hardware icon"></a></div>
+            <ul class="drop-down-menu">
+                <li><a href="#">產品</a>
+                    <ul>
+                            <li><a href="#">ASRock X570 AQUA</a>
+                                <ul>
+                                    <li><a href="./product.html"><img src=".\images/product/X570-AQUA_box(L1).png" width="480" height="400"></a></li>
+                                </ul>
+                            </li>
+                    </ul>
+                </li>
+                <li><a href="#">熱門活動</a></li>
+                <li><a href="#">服務&社群</a></li>
+                <li><a href="#">商店</a></li>
+            </ul>
+            <div class="searchIcon"><img src="./images/search_icon.png"></div>
+            <a href="login.html" title="登入">
+                <h1 class="login">登入</h1>
+            </a>
+        </div>
+        
+    </head>
+
+    <body>
+        <div id="login">
+            <!-- <p id="logo_image"><img src="./images/LOGO.png" alt="LOGO"></p> -->
+            <form action="login.js" method="POST">
+                <p><input type="text" placeholder="ID(Email Address)" id="ID" class="text_field"></p>
+                <!-- <label class="label_input">ID(Email Address)</label> -->
+                <p><input type="password" placeholder="Password" id="password" class="text_field"></p>
+                <!-- <label class="label_input">Password</label> -->
+                <div id="signIn_icon">
+                    <input type="button" id="btn_signIn" value="Sign In" onclick="login();">
+                    
+                </div>
+                <div id="btn_troubleSignIn">
+                        <a id="troubleSignIn" href="#">Trouble Sign In?</a>
+                </div>
+                <div id="creatAccount">
+                    <a id="creatAccount" href="#"><input type="button" id="btn_creat"  value="Creat New Account" onclick="creat();"></a>
+                </div>
+            </form>
+            <div class="div_line">
+                <div class="div_line_left"></div>
+                <p class="or">or</p>
+                <div class="div_line_right"></div>
+            </div>
+            <div class="com_icon">
+                <a href="https://www.facebook.com"><img src="./images/facebookIcon.png" alt="facebook"></a>
+                <a href="https://twitter.com/home?lang=zh-tw"><img src="./images/twitterIcon.png" alt="twitter"></a>
+                <a href="https://www.google.com.tw/webhp?tab=ww&authuser=0"><img src="./images/google_icon.png" alt="google"></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="./JS/login.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</div>
+
+</html>
